@@ -1,0 +1,137 @@
+/* base primary : #fF00FF
+base secondary : #aaff00 */
+
+:root,
+[data-bs-darkreader-scheme=light] {
+    --bs-primary-subtle: #FAEBFA;
+    --bs-primary-light: #E699E6;
+    --bs-primary: #CC33CC;
+    --bs-primary-contrast: #80007F;
+    --bs-secondary-subtle: #F5FAEB;
+    --bs-secondary: #99CC33;
+    --bs-secondary-contrast: #558000;
+}
+[data-darkreader-scheme=dark] {
+    --bs-primary-subtle: #660066;
+    --bs-primary-light: #660066;
+    --bs-primary: #CC33CC;
+    --bs-primary-contrast: #EF8FEF;
+    --bs-secondary-subtle: #2E3D0F;
+    --bs-secondary: #99CC33;
+    --bs-secondary-contrast: #CFEF8F;
+}
+
+.bg-primary-subtle {background-color: var(--bs-primary-subtle) !important;}
+.bg-primary {background-color: var(--bs-primary) !important;}
+.bg-primary-contrast {background-color: var(--bs-primary-contrast) !important;}
+.bg-secondary-subtle {background-color: var(--bs-secondary-subtle) !important;}
+.bg-secondary {background-color: var(--bs-secondary) !important;}
+.bg-secondary-contrast {background-color: var(--bs-secondary-contrast) !important;}
+
+.text-primary-subtle {color: var(--bs-primary-subtle) !important;}
+.text-primary {color: var(--bs-primary) !important;}
+.text-primary-contrast {color: var(--bs-primary-contrast) !important;}
+.text-secondary-subtle {color: var(--bs-secondary-subtle) !important;}
+.text-secondary {color: var(--bs-secondary) !important;}
+.text-secondary-contrast {color: var(--bs-secondary-contrast) !important;}
+
+.border-primary-subtle {border-color: var(--bs-primary-subtle) !important;}
+.border-primary {border-color: var(--bs-primary) !important;}
+.border-primary-contrast {border-color: var(--bs-primary-contrast) !important;}
+.border-secondary-subtle {border-color: var(--bs-secondary-subtle) !important;}
+.border-secondary {border-color: var(--bs-secondary) !important;}
+.border-secondary-contrast {border-color: var(--bs-secondary-contrast) !important;}
+
+.smallcap {
+    font-variant: small-caps;
+}
+
+.navbar-toggler {
+    background-color: var(--bs-primary-subtle);
+    border: solid var(--bs-secondary-contrast);
+    color: var(--bs-primary-contrast);
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+h1, .h1 {
+    color: var(--bs-primary-contrast);
+    font-weight: 700;
+}
+h2, .h2 {
+    color: var(--bs-primary);
+    font-weight: 400;
+}
+h3, .h3 {
+    color: var(--bs-primary-light);
+    font-weight: 200;
+}
+
+.btn-primary {
+    color: var(--bs-secondary-contrast) !important;
+    background-color: var(--bs-primary-subtle) !important;
+    border-color: var(--bs-primary-contrast) !important;
+}
+.btn-primary:hover {
+    color: var(--bs-secondary-subtle) !important;
+    background-color: var(--bs-primary-contrast) !important;
+    border-color: var(--bs-secondary-contrast) !important;
+}
+.btn-primary:active {
+    color: var(--bs-primary-subtle) !important;
+    background-color: var(--bs-secondary-contrast) !important;
+    border-color: var(--bs-primary-contrast) !important;
+}
+
+.btn-secondary {
+    color: var(--bs-primary-contrast) !important;
+    background-color: var(--bs-secondary-subtle) !important;
+    border-color: var(--bs-secondary-contrast) !important;
+}
+.btn-secondary:hover {
+    color: var(--bs-primary-subtle) !important;
+    background-color: var(--bs-secondary-contrast) !important;
+    border-color: var(--bs-primary-contrast) !important;
+}
+.btn-secondary:active {
+    color: var(--bs-secondary-subtle) !important;
+    background-color: var(--bs-primary-contrast) !important;
+    border-color: var(--bs-secondary-contrast) !important;
+}
+
+i {
+    font-size: 2em;
+}
+.progress-25 {
+    width: 25%;
+}
+.progress-33 {
+    width: 33%;
+}
+.progress-50 {
+    width: 50%;
+}
+.progress-66 {
+    width: 66%;
+}
+.progress-75 {
+    width: 75%;
+}
+
+.btn[aria-expanded]::before {
+    width: 1.25em;
+    line-height: 0;
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+    transition: transform 0.35s ease;
+    transform-origin: .5em 50%;
+}
+.btn[aria-expanded="true"]::before {
+    transform: rotate(90deg);
+}
+
+.form-control:focus {
+    border-color: var(--bs-secondary-contrast);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem var(--bs-secondary-subtle);
+  }
