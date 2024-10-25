@@ -61,11 +61,13 @@
     </header>
     
     <main class="mt-5">
-        <p class="text-center fw-bold text-secondary">Attention, cette page est en travaux. Ce que vous voyez n'est qu'une ébauche !</p>
+        <p class="text-center fw-bold text-secondary">Attention, cette page est en travaux.</p>
+        <p class="text-center text-secondary">Ce que vous voyez n'est qu'une ébauche (toutes les photos sont à retravailler, et redimensionner etc) !</p>        
         <section class="my-5" id="tissu">
             <div class="container">
                 <h1>Couture</h1>
-                <div id="carouselcouture" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <p class="text-center text-secondary-contrast">Il manque plusieurs photos ici : une tenue de nourrice 13ème faite en 2017, une cape en laine faite en 2018, une tenue 19ème faite en 2022, pour les projets principaux. Cela restera une liste non-exhaustive.</p>
+                <div id="carouselcouture" class="carousel slide carousel-fade" data-bs-interval="false">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselcouture" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselcouture" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -76,7 +78,7 @@
                             <img src="portfolio/tissu/P1080258.JPG" class="d-block w-100" alt="2010, Corset et manchons en cuir de chaise upcyclé" title="2010, Corset et manchons en cuir de chaise upcyclé">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5><span class="bg-secondary-subtle text-primary-contrast">2010</span></h5>
-                                <p><span class="bg-secondary-subtle text-primary-contrast">Corset et manchons en cuir de chaise upcyclé, chemise et jupe en draps upcyclés également</span></p>
+                                <p><span class="bg-secondary-subtle text-primary-contrast">Corset et manchons en revêtement de chaise upcyclé, chemise et jupe en draps upcyclés également</span></p>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -106,15 +108,91 @@
             </div>
         </div>
     </section>
-    <section class="py-5" id="cuir">
+    <section class="py-5 bg-light" id="cuir">
         <div class="container">
             <h1>Maroquinerie</h1>
-            <div class="row mt-5">
-                <div class="col-7">
-                    <div class="p-5 bg-primary-subtle"></div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                    <div class="card h-100">                        
+                        <a data-bs-toggle="offcanvas" href="#offcanvasTablier" role="button" aria-controls="offcanvasTablier">
+                            <img src="portfolio/cuir/Tablier_Steven_encours.jpg" alt="Tablier en cuir" class="card-img-top">
+                        </a>
+                        <div class="card-footer">Tablier en cuir</div>
+                    </div>
                 </div>
-                <div class="offset-1 col-4">
-                    <div class="p-5 bg-primary-subtle"></div>
+                <div class="offcanvas offcanvas-bottom w-100 h-100" tabindex="-1" id="offcanvasTablier" aria-labelledby="offcanvasTablierLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasTablierLabel">Tablier en cuir</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            Sur cette photo, il n'est pas terminé. Il s'agit d'une commande que j'ai livrée et je n'ai pas de photo de ce tablier fini.
+                        </div>
+                        <img src="portfolio/cuir/Tablier_Steven_encours.jpg" alt="Tablier en cuir">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <a data-bs-toggle="offcanvas" href="#offcanvasCeinture" role="button" aria-controls="offcanvasCeinture">
+                            <img src="portfolio/cuir/Ceinture_Edouard.jpg" alt="Ceinture en cuir cousue au lacet, avec un anneau simple comme boucle" class="card-img-top">
+                        </a>
+                        <div class="card-footer">Ceinture cousue au lacet</div>
+                    </div>
+                </div>
+                <div class="offcanvas offcanvas-bottom w-100 h-100" tabindex="-1" id="offcanvasCeinture" aria-labelledby="offcanvasCeintureLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasCeintureLabel">Ceinture cousue au lacet et à fermeture par anneau sans ardillon</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            C'est un projet très sobre, rapide et surtout utilitaire. J'ai teint ma bande de cuir au brou de noix avant montage.
+                        </div>
+                        <img src="portfolio/cuir/Ceinture_Edouard.jpg" alt="Ceinture en cuir cousue au lacet, avec un anneau simple comme boucle" width="100%">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">                        
+                        <img src="portfolio/cuir/PorteCorne_Faustine_recto.jpg" alt="Corne de vache équipée d'un couvercle en cuir et d'un passant pour la fixer à la ceinture" class="card-img-top">
+                        <div class="card-footer">Porte-corne et couvercle</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="portfolio/cuir/Sacoche_Edouard_recto.jpg" alt="Sacoche de ceinture en cuir" class="card-img-top">
+                        <div class="card-footer">Sacoche de ceinture</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="portfolio/cuir/Sacoche-Aurélien.jpg" alt="Sacoche de ceinture en cuir" class="card-img-top">
+                        <div class="card-footer">Une autre sacoche de ceinture</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="portfolio/cuir/bourses.JPG" alt="Bourses en cuir" class="card-img-top">
+                        <div class="card-footer">Bourses en cuir</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="portfolio/cuir/porte-cartes.JPG" alt="Porte-cartes" class="card-img-top">
+                        <div class="card-footer">Porte-cartes</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="portfolio/cuir/mini-pochette.JPG" alt="Mini-pochette" class="card-img-top">
+                        <div class="card-footer">Mini-pochette</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="portfolio/cuir/porte-monnaie-triangle.JPG" alt="Porte-monnaie triangulaires" class="card-img-top">
+                        <div class="card-footer">Porte-monnaies</div>
+                    </div>
                 </div>
             </div>
         </div>
