@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- ma feuille de style -->
     <link rel="stylesheet" href="style-cv-faustine-maffert.css">
+    <!-- Script (voir commentaire en bas de page) -->
 </head>
 
 <body>
@@ -65,7 +66,7 @@
                         <h2>Reconversion -> Dev</h2>
                         <p class="my-3">
                             Ex-Aide-soignante en reconversion. Après avoir survolé <span class="bg-primary-subtle text-secondary-contrast p-1 rounded-2">HTML 5</span> et <span class="bg-primary-subtle text-secondary-contrast p-1 rounded-2">CSS 3</span> me voilà en train d'expérimenter avec <span class="bg-primary-subtle text-secondary-contrast p-1 rounded-2">Bootstrap</span> !
-                        </p>
+                        </p> <!-- Pour surligner des mot-clefs pertinents à -->
                         <p>
                             Manuelle à mes heures perdues, je profite de mes nouveaux apprentissages front-end pour faire un portfolio pour mon artisanat <span class="small">(et réciproquement, je profite de mon artisanat pour m'entraîner à utiliser HTML et Bootstrap)</span>.
                         </p>
@@ -85,6 +86,7 @@
                 <form action="#" method="get" target="_blank" autocomplete="on">
                     <fieldset>
                         <legend class="h3"><span class="text-uppercase">à</span> propos de vous</legend>
+                        <!-- Tu peux juste copier/coller un "À" depuis un texte existant ou utiliser le code "alt"+"183"(uniquement au pavé numérique) -->
                         <div class="row g-2">
                             <div class="col-md">
                                 <div class="form-floating m-1">
@@ -123,8 +125,8 @@
                 <div class="col-12 col-md-4">
                     <a href="#" class="navbar-brand smallcap ms-5 text-center text-md-start text-primary-contrast">
                         Faustine Maffert
-                    </span>
-                </a>
+                    </span> <!-- </a> ? -->
+                </a> <!-- </div> ? -->
             </div>
             <div class="col-12 col-md-4 text-center text-md-center">
                 <ul class="list-unstyled mb-0">
@@ -160,6 +162,8 @@
         </div>
         <!-- Bootstrap JS bundle -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- Je ne connais rien au framework Bootstrap mais à priori il vaut mieux placer les balises <scipt> dans le <head> et utiliser l'attribut "defer" s'ils doivent s'exécuter après le HTML -->
+        <!-- Ainsi : <script src="..." integrity="..." defer></scipt> -->
     </footer>
 </body>
 </html>

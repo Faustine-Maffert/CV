@@ -1,5 +1,7 @@
 /* base primary : #fF00FF
-base secondary : #aaff00 */
+base secondary : #aaff00  */
+/* Peut-être que c'est parce que c'est du Bootstrap (auquel je ne connais rien),
+mais a priori ces lignes ci-dessus ne seront pas prises en compte car elles sont en commentaire */
 
 :root,
 [data-fm-darkreader-scheme=light], [data-fm-theme=light] {
