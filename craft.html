@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- ma feuille de style -->
     <link rel="stylesheet" href="style-cv-faustine-maffert.css">
+    <!-- Script (voir commentaire en bas de page) -->
 </head>
 
 <body>
@@ -61,11 +62,13 @@
     </header>
     
     <main class="mt-5">
+        <!-- Balise h1 "Portfolio" ou autre -->
+        <!-- Pour le SEO il vaut mieux ne mettre qu'une balise h1 par page, ici : "Portfolio" par exemple, et passer les trois balises h1 ci-dessous en balises h2 -->
         <p class="text-center fw-bold text-secondary">Attention, cette page est en travaux.</p>
         <p class="text-center text-secondary">Ce que vous voyez n'est qu'une ébauche (toutes les photos sont à retravailler, et redimensionner etc) !</p>        
         <section class="my-5" id="tissu">
             <div class="container">
-                <h1>Couture</h1>
+                <h1>Couture</h1> <!-- Balise h2 -->
                 <p class="text-center text-secondary-contrast">Il manque plusieurs photos ici : une tenue de nourrice 13ème faite en 2017, une cape en laine faite en 2018, une tenue 19ème faite en 2022, pour les projets principaux. Cela restera une liste non-exhaustive.</p>
                 <div id="carouselcouture" class="carousel slide carousel-fade" data-bs-interval="false">
                     <div class="carousel-indicators">
@@ -76,9 +79,10 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="portfolio/tissu/P1080258.JPG" class="d-block w-100" alt="2010, Corset et manchons en cuir de chaise upcyclé" title="2010, Corset et manchons en cuir de chaise upcyclé">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-none d-md-block"> 
                                 <h5><span class="bg-secondary-subtle text-primary-contrast">2010</span></h5>
                                 <p><span class="bg-secondary-subtle text-primary-contrast">Corset et manchons en revêtement de chaise upcyclé, chemise et jupe en draps upcyclés également</span></p>
+                                <!-- Tu peux appliquer ces class directement aux balises <h5> et <p> plutôt que d'ajouter des balises <span> -->
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -86,6 +90,7 @@
                             <div class="carousel-caption d-none d-md-block">
                                 <h5><span class="bg-secondary-subtle text-primary-contrast">2011</span></h5>
                                 <p><span class="bg-secondary-subtle text-primary-contrast">Robe inspiration médiévale réversible</span></p>
+                                <!-- Tu peux attribuer ces class directement aux balises <h5> et <p> plutôt que d'ajouter des balises <span> -->
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -93,6 +98,7 @@
                             <div class="carousel-caption d-none d-md-block">
                                 <h5><span class="bg-secondary-subtle text-primary-contrast">2024</span></h5>
                                 <p><span class="bg-secondary-subtle text-primary-contrast">Chemises d'allaitement style médiéval</span></p>
+                                <!-- Tu peux appliquer ces class directement aux balises <h5> et <p> plutôt que d'ajouter des balises <span> -->
                             </div>
                         </div>
                     </div>
@@ -110,7 +116,7 @@
     </section>
     <section class="py-5 bg-light" id="cuir">
         <div class="container">
-            <h1>Maroquinerie</h1>
+            <h1>Maroquinerie</h1> <!-- Balise h2 -->
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
                 <div class="col">
                     <div class="card h-100">                        
@@ -199,7 +205,7 @@
     </section>
     <section class="py-5" id="autres">
         <div class="container">
-            <h1>Autres</h1>
+            <h1>Autres</h1> <!-- Balise h2 -->
             <div class="row mt-5">
                 <div class="col-7">
                     <div class="p-5 bg-primary-subtle"></div>
@@ -218,8 +224,8 @@
             <div class="col-12 col-md-4 text-center text-md-start">
                 <a href="#" class="navbar-brand smallcap ms-md-5 text-primary-contrast">
                     Faustine Maffert
-                </span>
-            </a>
+                </span> <!-- </a> ? -->
+            </a> <!-- </div> ? -->
         </div>
         <div class="col-12 col-md-4 text-center text-md-center">
             <ul class="list-unstyled mb-0">
@@ -255,6 +261,8 @@
     </div>
     <!-- Bootstrap JS bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Je ne connais rien au framework Bootstrap mais à priori il vaut mieux placer les balises <scipt> dans le <head> et utiliser l'attribut "defer" s'ils doivent s'exécuter après le HTML -->
+    <!-- Ainsi : <script src="..." integrity="..." defer></scipt> -->
 </footer>
 </body> 
 </html>
