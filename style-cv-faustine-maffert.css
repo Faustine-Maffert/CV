@@ -65,6 +65,7 @@ base secondary : #aaff00 */
 h1, .h1 {
     color: var(--fm-primary-contrast);
     font-weight: 700;
+    text-align: center;
 }
 h2, .h2 {
     color: var(--fm-primary);
@@ -73,6 +74,13 @@ h2, .h2 {
 h3, .h3 {
     color: var(--fm-primary-light);
     font-weight: 200;
+}
+
+em {
+    background-color: var(--fm-primary-subtle);
+    color: var(--fm-secondary-contrast);
+    padding: 0.25rem;
+    border-radius: 0.25rem;
 }
 
 .btn-primary {
